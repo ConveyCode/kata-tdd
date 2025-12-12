@@ -1,0 +1,10 @@
+name: kata
+
+services:
+    php:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        network_mode: bridge
+        volumes:
+            - ".:/app"
